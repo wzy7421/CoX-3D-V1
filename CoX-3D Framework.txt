@@ -1,0 +1,47 @@
+CoX-3D/
+├─ configs/                     # 配置文件 (含 demo / ablation configs)
+│   ├─ cox3d_demo.yaml
+│   └─ ablation/
+│       ├─ diffusion_only.yaml
+│       └─ diffusion_nerf.yaml
+│
+├─ data/                        # 空目录, 用户下载完整 COCO/KITTI 后放置
+│
+├─ docs/
+│   ├─ figures/                 # pipeline.drawio 等图示源文件
+│   ├─ reproduction.md          # 复现实验指南 (已生成)
+│   └─ ...                      
+│
+├─ examples/
+│   └─ sample_data.zip          # 已生成的小样例包 (reviewers 用)
+│
+├─ scripts/
+│   └─ download_models.sh       # 下载模型权重脚本
+│
+├─ src/
+│   ├─ cox3d/
+│   │   ├─ requirements/        # R1 模块
+│   │   ├─ prompts/             # R2 模块
+│   │   ├─ generation/          # R3 模块 (diffusion/nerf)
+│   │   ├─ dfm/                 # DfM 检查器
+│   │   └─ explain/             # R4 模块 (Grad-CAM, metrics)
+│   └─ utils/
+│
+├─ static/                      # 网站前端 (index.html 已更新)
+│   ├─ index.html
+│   └─ assets/
+│       ├─ cox3d-logo.svg
+│       ├─ hero-overview.png
+│       ├─ result_1.png
+│       └─ ...
+│
+├─ tools/
+│   ├─ demo.py                  # 快速测试入口
+│   ├─ collect_metrics.py
+│   └─ visualize_report.py
+│
+├─ LICENSE
+├─ README.md                    # 英文 Readme (已生成)
+├─ DATA_AVAILABILITY.md         # 数据可用性声明 (已生成)
+├─ CITATION.cff                 # 引文文件
+└─ requirements.txt             # Python 依赖
